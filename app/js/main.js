@@ -11,9 +11,7 @@ requirejs.config({
 require(['jquery', 'lodash'], function ($, _) {
 	$(function () {
 		$('h1').text('This is jQuery - loaded from main.js')
-		var uppers = _(['one', 'two', 'three']).map(function (str) {
-			return str.toUpperCase()
-		})
-		console.log(uppers)
+		var truthies = _.compact([0, undefined, 1, null, 2, '', 3, false, 4, NaN, 5])
+		console.log(truthies)
 	})
 })
