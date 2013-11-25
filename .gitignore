@@ -6,13 +6,16 @@
 # Icon must ends with two \r.
 Icon
 
-
 # Thumbnails
 ._*
 
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# npm and bower
+node_modules
+app/components
 
 ### Sass Ignores - "Sassy CSS" http://sass-lang.com/
 *.sass-cache
