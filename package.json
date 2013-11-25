@@ -1,0 +1,17 @@
+{
+  "name": "karma-mocha-boilerplate",
+  "version": "0.0.1",
+  "description": "Karma mocha boilerplate",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Marcin Kumorek",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "24c65f7ed5cca17d0844f0df9d4d147fb1a0095e"
+}
