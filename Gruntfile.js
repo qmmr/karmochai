@@ -4,18 +4,30 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+
+		watch: {
+			karma: {
+				files: ['app/js/**/*.js', 'test/spec/**/*.spec.js'],
+				tasks: ['karma:unit:run']
+			}
+		},
+
 		karma: {
 			options: {
-				cofigFile: 'karma.conf.js',
-				runnerPort: 9876,
-				browsers: ['Chrome']
+				configFile: 'karma.conf.js',
+				// runnerPort: 9876,
+			},
+			unit: {
+				browsers: ['Chrome'],
+				background: true
 			},
 			continuous: {
-				// singleRun: true,
+				singleRun: true,
 				browsers: ['PhantomJS']
 			},
 			dev: {
-				reporters: 'dots'
+				browsers: ['Chrome'],
+				reporters: ['dots']
 			}
 		}
 	})
@@ -23,5 +35,5 @@ module.exports = function (grunt) {
 	// grunt.loadNpmTasks()
 
 	grunt.registerTask('test', 'Run Karma test', ['karma:continuous'])
-	grunt.registerTask('default', ['karma'])
+	grunt.registerTask('default', ['karma:unit', 'watch'])
 };
