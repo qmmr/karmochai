@@ -5,25 +5,26 @@ module.exports = function(config) {
   config.set({
 
     // base path, that will be used to resolve files and exclude
-    basePath: '',
+    basePath: 'app',
 
 
     // frameworks to use
-    frameworks: ['mocha', 'requirejs'],
+    frameworks: ['mocha', 'chai', 'requirejs'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      {pattern: 'app/components/**/*.js', included: false},
-      {pattern: 'app/js/*.js', included: false},
-      {pattern: 'test/spec/*.spec.js', included: false},
-      'test-main.js',
+      {pattern: 'components/**/*.js', included: false},
+      {pattern: 'js/*.js', included: false},
+      {pattern: '../test/spec/*.spec.js', included: false},
+      '../test/test-main.js',
     ],
 
 
     // list of files to exclude
     exclude: [
-        'app/components/**/*pec.js'
+        'js/main.js'
+        // 'app/components/**/*pec.js'
     ],
 
 
