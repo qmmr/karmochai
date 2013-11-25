@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 		karma: {
 			options: {
 				configFile: 'karma.conf.js',
-				// runnerPort: 9876,
+				runnerPort: 9999,
 			},
 			unit: {
 				browsers: ['Chrome'],
@@ -31,8 +31,6 @@ module.exports = function (grunt) {
 			}
 		}
 	})
-
-	// grunt.loadNpmTasks()
 
 	grunt.registerTask('test', 'Run Karma test', ['karma:continuous'])
 	grunt.registerTask('default', ['karma:unit', 'watch'])

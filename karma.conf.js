@@ -27,6 +27,12 @@ module.exports = function(config) {
         // 'app/components/**/*pec.js'
     ],
 
+    client: {
+        mocha: {
+            ui: 'tdd'
+        }
+    },
+
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
