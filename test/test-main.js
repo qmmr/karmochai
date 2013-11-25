@@ -9,11 +9,15 @@ for (var file in window.__karma__.files) {
 
 requirejs.config({
 	// Karma serves files from '/base'
-	baseUrl: '/base/app/js',
+	baseUrl: '/base/app',
 
 	paths: {
 		'jquery': '../components/jquery/jquery'
 	},
+
+	packages: [
+		{ name: 'lodash', location: '../components/lodash', main: 'lodash' }
+	],
 
 	// shim: {
 	// 	'underscore': {

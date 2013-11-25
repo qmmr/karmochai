@@ -1,7 +1,7 @@
 define(['jquery', 'lodash'], function ($, _) {
 
-	describe('description', function() {
-		it('should do some basic test', function() {
+	describe('Normally I do not test, but when I do', function() {
+		it('I run karma with mocha!', function() {
 			expect(true).to.be.ok
 		})
 	})
