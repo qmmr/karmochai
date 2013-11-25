@@ -22,5 +22,6 @@ module.exports = function (grunt) {
 
 	// grunt.loadNpmTasks()
 
+	grunt.registerTask('test', 'Run Karma test', ['karma:continuous'])
 	grunt.registerTask('default', ['karma'])
 };
