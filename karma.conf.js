@@ -1,30 +1,30 @@
 // Karma configuration
 // Generated on Mon Nov 25 2013 12:16:28 GMT+0000 (GMT)
-
+// process.env['PHANTOMJS_BIN'] = '/usr/local/bin/phantomjs'
 module.exports = function(config) {
   config.set({
 
     // base path, that will be used to resolve files and exclude
-    basePath: 'app',
+    basePath: '',
 
 
     // frameworks to use
-    frameworks: ['mocha', 'chai', 'requirejs'],
+    frameworks: ['mocha', 'requirejs'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      {pattern: 'components/**/*.js', included: false},
-      {pattern: 'js/*.js', included: false},
-      {pattern: '../test/spec/*.spec.js', included: false},
-      '../test/test-main.js',
+        { pattern: 'app/components/**/*.js', included: false },
+        { pattern: 'app/js/*.js', included: false },
+        { pattern: 'test/spec/*.spec.js', included: false },
+        'test/test-main.js',
     ],
 
 
     // list of files to exclude
     exclude: [
-        'js/main.js'
-        // 'app/components/**/*pec.js'
+        'js/main.js',
+        'app/components/**/*pec.js'
     ],
 
     client: {
