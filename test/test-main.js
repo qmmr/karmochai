@@ -14,7 +14,8 @@ requirejs.config({
 	paths: {
 		'jquery': 'components/jquery/jquery',
 		'chai': 'components/chai/chai',
-		// 'chai': '../node_modules/chai/chai',
+		// 'chai': '../test/spec/lib/chai/chai',
+		// 'chai': './node_modules/chai/chai',
 		'sinon': 'components/sinon/lib/sinon',
 		'sinon-chai': 'components/sinon-chai/lib/sinon-chai'
 
