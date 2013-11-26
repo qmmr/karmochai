@@ -1,5 +1,5 @@
 requirejs.config({
-	baseUrl: 'app',
+	baseUrl: '',
 	paths: {
 		'jquery': '../components/jquery/jquery'
 	},
@@ -8,8 +8,10 @@ requirejs.config({
 	]
 })
 
-require(['jquery', 'lodash'], function ($, _) {
+require(['jquery', 'lodash', 'js/app'], function ($, _, App) {
 	$(function () {
 		$('h1').text('Hello and welcome to requirejs world!')
+		$('#hero').append($('<ul>'))
+		console.log('%cMARCIN => App.truthyValues', 'background: #222; color: lime', App.truthyValues)
 	})
 })
