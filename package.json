@@ -1,5 +1,5 @@
 {
-  "name": "karma-mocha-boilerplate",
+  "name": "karmochai",
   "version": "0.0.1",
   "description": "Karma mocha boilerplate",
   "main": "main.js",
@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": "",
   "author": "Marcin Kumorek",
@@ -16,13 +16,14 @@
   "gitHead": "24c65f7ed5cca17d0844f0df9d4d147fb1a0095e",
   "devDependencies": {
     "grunt": "~0.4.2",
+    "bower": "~1.2.7",
     "grunt-karma": "~0.6.2",
     "grunt-contrib-watch": "~0.5.3",
     "matchdep": "~0.3.0",
-    "bower": "~1.2.7",
+    "karma": "~0.10.1",
     "grunt-mocha": "~0.4.6",
     "karma-mocha": "~0.1.0",
-    "karma-chai": "0.0.2"
+    "chai": "~1.8.1"
   },
   "dependencies": {
     "requirejs": "~2.1.9",
