@@ -26,6 +26,7 @@ module.exports = function (grunt) {
 				browsers: ['PhantomJS']
 			},
 			dev: {
+				singleRun: false,
 				browsers: ['Chrome'],
 				reporters: ['dots']
 			}
