@@ -23,12 +23,7 @@
     "karma": "~0.10.1",
     "grunt-mocha": "~0.4.6",
     "karma-mocha": "~0.1.0",
-    "chai": "~1.8.1"
-  },
-  "dependencies": {
-    "requirejs": "~2.1.9",
     "chai": "~1.8.1",
-    "mocha": "~1.14.0",
-    "sinon": "~1.7.3"
+    "mocha": "~1.14.0"
   }
 }
