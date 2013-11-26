@@ -11,5 +11,9 @@
     "jquery": "~2.0.3",
     "normalize-css": "~2.1.3",
     "lodash": "~2.3.0"
+  },
+  "devDependencies": {
+    "sinon-chai": "~2.4.0",
+    "sinon": "~1.7.3"
   }
 }
