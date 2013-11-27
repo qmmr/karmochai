@@ -15,7 +15,7 @@ Icon
 
 # npm and bower
 node_modules
-app/components
+components
 
 ### Sass Ignores - "Sassy CSS" http://sass-lang.com/
 *.sass-cache
