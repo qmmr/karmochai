@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path, that will be used to resolve files and exclude
-    basePath: '',
+    basePath: '.',
 
 
     // frameworks to use
@@ -14,9 +14,12 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        { pattern: 'app/components/**/*.js', included: false },
+        { pattern: 'components/**/*.js', included: false },
+        // include chai.js and possibly other test libraries
+        // bower install chai error -> chaijs/deep-eql not found
+        { pattern: 'test/lib/*.js', included: false },
         { pattern: 'app/js/*.js', included: false },
-        { pattern: 'test/spec/*.spec.js', included: false },
+        { pattern: 'test/spec/**/*.spec.js', included: false },
         'test/test-main.js',
     ],
 
@@ -24,7 +27,7 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
         'js/main.js',
-        'app/components/**/*pec.js'
+        'components/**/*pec.js'
     ],
 
     client: {
