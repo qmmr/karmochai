@@ -1,7 +1,7 @@
 var tests = [];
 for (var file in window.__karma__.files) {
 	if (window.__karma__.files.hasOwnProperty(file)) {
-		if (/spec\.js$/.test(file)) {
+		if (/spec\.js$/i.test(file)) {
 			tests.push(file);
 		}
 	}
@@ -12,12 +12,10 @@ requirejs.config({
 	baseUrl: '/base/app',
 
 	paths: {
-		'jquery': 'components/jquery/jquery',
-		'chai': 'components/chai/chai',
-		// 'chai': '../test/spec/lib/chai/chai',
-		// 'chai': './node_modules/chai/chai',
-		'sinon': 'components/sinon/lib/sinon',
-		'sinon-chai': 'components/sinon-chai/lib/sinon-chai'
+		'jquery': '../components/jquery/jquery',
+		'chai': '../test/lib/chai',
+		'sinon': '../components/sinon/lib/sinon',
+		'sinon-chai': '../components/sinon-chai/lib/sinon-chai'
 
 		// 'underscore': '../components/underscore/underscore',
 		// 'backbone': '../components/backbone-amd/backbone',
@@ -25,7 +23,7 @@ requirejs.config({
 	},
 
 	packages: [
-		{ name: 'lodash', location: 'components/lodash', main: 'lodash' }
+		{ name: 'lodash', location: '../components/lodash', main: 'lodash' }
 	],
 
 	// shim: {
