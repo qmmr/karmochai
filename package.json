@@ -1,8 +1,8 @@
 {
   "name": "karmochai",
   "version": "0.0.1",
-  "description": "Karma mocha boilerplate",
-  "main": "main.js",
+  "description": "Karmochainon - Karma mocha chai sinon boilerplate",
+  "main": "app/js/main.js",
   "directories": {
     "test": "test"
   },
@@ -23,7 +23,6 @@
     "karma": "~0.10.1",
     "grunt-mocha": "~0.4.6",
     "karma-mocha": "~0.1.0",
-    "chai": "~1.8.1",
     "mocha": "~1.14.0"
   }
 }
