@@ -33,6 +33,9 @@ module.exports = function (grunt) {
 		}
 	})
 
+	/* load tasks from tasks dir */
+	grunt.loadTasks('tasks')
+
 	grunt.registerTask('test', 'Run Karma test', ['karma:continuous'])
 	grunt.registerTask('default', ['karma:unit', 'watch'])
 };
