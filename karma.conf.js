@@ -14,7 +14,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        { pattern: 'components/**/*.js', included: false },
+        { pattern: 'bower_components/**/*.js', included: false },
         // include chai.js and possibly other test libraries
         // bower install chai error -> chaijs/deep-eql not found
         { pattern: 'test/lib/*.js', included: false },
@@ -27,7 +27,7 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
         'js/main.js',
-        'components/**/*pec.js'
+        'bower_components/**/*pec.js'
     ],
 
     client: {

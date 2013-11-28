@@ -1,10 +1,10 @@
 requirejs.config({
 	baseUrl: '',
 	paths: {
-		'jquery': '../components/jquery/jquery'
+		'jquery': '../bower_components/jquery/jquery'
 	},
 	packages: [
-		{ name: 'lodash', location: '../components/lodash', main: 'lodash' }
+		{ name: 'lodash', location: '../bower_components/lodash/dist', main: 'lodash' }
 	]
 })
 

@@ -12,18 +12,18 @@ requirejs.config({
 	baseUrl: '/base/app',
 
 	paths: {
-		'jquery': '../components/jquery/jquery',
+		'jquery': '../bower_components/jquery/jquery',
 		'chai': '../test/lib/chai',
-		'sinon': '../components/sinon/lib/sinon',
-		'sinon-chai': '../components/sinon-chai/lib/sinon-chai'
+		'sinon': '../bower_components/sinon/lib/sinon',
+		'sinon-chai': '../bower_components/sinon-chai/lib/sinon-chai'
 
-		// 'underscore': '../components/underscore/underscore',
-		// 'backbone': '../components/backbone-amd/backbone',
-		// 'marionette': '../components/marionette/lib/backbone.marionette',
+		// 'underscore': '../bower_components/underscore/underscore',
+		// 'backbone': '../bower_components/backbone-amd/backbone',
+		// 'marionette': '../bower_components/marionette/lib/backbone.marionette',
 	},
 
 	packages: [
-		{ name: 'lodash', location: '../components/lodash', main: 'lodash' }
+		{ name: 'lodash', location: '../bower_components/lodash/dist', main: 'lodash' }
 	],
 
 	// shim: {
